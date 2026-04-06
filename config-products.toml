@@ -1,0 +1,39 @@
+# Channel 2: Product Reviews & Recommendations
+# Target: r/BuyItForLife + r/AsianBeauty (7.3M subscribers, 11 posts/week)
+# RPM: Medium | Affiliate potential: High
+
+[reddit]
+subreddit = "BuyItForLife+AsianBeauty"
+post_limit = 5
+min_upvotes = 150
+min_comments = 10
+max_comment_length = 400
+top_comments = 6
+
+[tts]
+engine = "gtts"
+language = "en"
+slow = false
+
+[video]
+width = 1080
+height = 1920
+fps = 30
+max_duration = 58
+background_dir = "assets/backgrounds"
+font = "assets/fonts/NotoSansKR-Bold.ttf"
+title_font_size = 52
+comment_font_size = 42
+text_color = "white"
+text_stroke_color = "black"
+text_stroke_width = 3
+watermark = "r/BuyItForLife"
+opacity = 0.7
+screenshot_scale = 0.90
+bgm_enabled = true
+bgm_volume = 0.12
+
+[output]
+dir = "output/products"
+filename_template = "products_{post_id}_{date}"
+history_file = "output/products/history.json"

@@ -1,0 +1,39 @@
+# Channel 3 (Plug): Steam/PC Gaming New Releases
+# Target: r/Steam + r/pcgaming (9.1M subscribers, 26 posts/week)
+# RPM: Low | Competition: High | Volume: Highest
+
+[reddit]
+subreddit = "Steam+pcgaming"
+post_limit = 5
+min_upvotes = 300
+min_comments = 20
+max_comment_length = 400
+top_comments = 6
+
+[tts]
+engine = "gtts"
+language = "en"
+slow = false
+
+[video]
+width = 1080
+height = 1920
+fps = 30
+max_duration = 58
+background_dir = "assets/backgrounds"
+font = "assets/fonts/NotoSansKR-Bold.ttf"
+title_font_size = 52
+comment_font_size = 42
+text_color = "white"
+text_stroke_color = "black"
+text_stroke_width = 3
+watermark = "r/Steam"
+opacity = 0.7
+screenshot_scale = 0.90
+bgm_enabled = true
+bgm_volume = 0.12
+
+[output]
+dir = "output/steam"
+filename_template = "steam_{post_id}_{date}"
+history_file = "output/steam/history.json"

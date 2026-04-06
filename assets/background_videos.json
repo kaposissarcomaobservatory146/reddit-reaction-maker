@@ -1,0 +1,30 @@
+{
+  "__comment": "Background videos for Roblox Shorts. Uses yt-dlp to auto-download.",
+  "__note": "Use 'No Commentary Gameplay' videos to minimize copyright risk.",
+  "videos": {
+    "roblox-parkour": {
+      "url": "https://www.youtube.com/watch?v=KKFDmKIP0Ks",
+      "filename": "roblox-parkour.mp4",
+      "credit": "No Commentary Gameplay",
+      "game": "Roblox Parkour"
+    },
+    "roblox-obby": {
+      "url": "https://www.youtube.com/watch?v=8eR3X6gHgyA",
+      "filename": "roblox-obby.mp4",
+      "credit": "Gameplay Only",
+      "game": "Roblox Obby"
+    },
+    "minecraft-parkour": {
+      "url": "https://www.youtube.com/watch?v=n_Dv4JMiwK8",
+      "filename": "minecraft-parkour.mp4",
+      "credit": "bbswitzer",
+      "game": "Minecraft Parkour"
+    },
+    "subway-surfers": {
+      "url": "https://www.youtube.com/watch?v=DSCEjJpJcbg",
+      "filename": "subway-surfers.mp4",
+      "credit": "Gameplay",
+      "game": "Subway Surfers"
+    }
+  }
+}

@@ -1,0 +1,37 @@
+# Roblox Shorts Video Maker - Configuration
+# No Reddit API key required! Uses .json endpoints directly.
+
+[reddit]
+subreddit = "roblox"
+post_limit = 5          # Number of posts to fetch per run
+min_upvotes = 100       # Minimum upvotes to consider
+min_comments = 10       # Minimum comments on post
+max_comment_length = 500  # Max characters per comment
+top_comments = 5        # Number of top comments to include
+
+[tts]
+engine = "gtts"         # Options: gtts, elevenlabs, openai
+language = "en"         # Language code: en, ko, ja, etc.
+slow = false            # Slower speech for clarity
+
+[video]
+width = 1080
+height = 1920
+fps = 30
+max_duration = 58       # Max seconds (Shorts limit is 60)
+background_dir = "assets/backgrounds"
+font = "assets/fonts/NotoSansKR-Bold.ttf"
+title_font_size = 52
+comment_font_size = 42
+text_color = "white"
+text_stroke_color = "black"
+text_stroke_width = 3
+watermark = "r/roblox"
+opacity = 0.7           # Background dimming (0.0 - 1.0)
+bgm_enabled = true      # Background music on/off
+bgm_volume = 0.15       # BGM volume (0.0 - 1.0), keep low so TTS is clear
+
+[output]
+dir = "output"
+filename_template = "{subreddit}_{post_id}_{date}"
+history_file = "output/history.json"

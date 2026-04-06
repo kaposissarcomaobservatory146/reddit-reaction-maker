@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# Config with secrets
+config.toml
+
+# Output
+output/*.mp4
+output/*.mp3
+output/history.json
+
+# Temp files
+temp/
+*.tmp
+
+# Assets (user-provided)
+assets/backgrounds/*.mp4
+assets/fonts/*.ttf
+assets/fonts/*.otf
+
+# IDE
+.vscode/
+.idea/

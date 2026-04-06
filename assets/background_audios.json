@@ -1,0 +1,32 @@
+{
+  "__comment": "Background music for Roblox Shorts.",
+  "__copyright_note": "Only use music explicitly licensed as royalty-free / CC0 / no copyright.",
+  "__sources": [
+    "Pixabay Music (pixabay.com/music) - Free, no attribution required",
+    "YouTube Audio Library (youtube.com/audiolibrary) - Free for YouTube use",
+    "Free Music Archive (freemusicarchive.org) - CC licensed"
+  ],
+  "audios": {
+    "lofi-chill": {
+      "url": "https://cdn.pixabay.com/audio/2024/11/01/audio_1f6a4e0e70.mp3",
+      "filename": "lofi-chill.mp3",
+      "credit": "Pixabay",
+      "license": "Pixabay Content License (free, no attribution required)",
+      "title": "Lofi Chill"
+    },
+    "good-night": {
+      "url": "https://cdn.pixabay.com/audio/2022/05/27/audio_1808fbf07a.mp3",
+      "filename": "good-night.mp3",
+      "credit": "FASSounds (Pixabay)",
+      "license": "Pixabay Content License (free, no attribution required)",
+      "title": "Good Night"
+    },
+    "lofi-study": {
+      "url": "https://cdn.pixabay.com/audio/2023/07/07/audio_e4d4afa0d0.mp3",
+      "filename": "lofi-study.mp3",
+      "credit": "Pixabay",
+      "license": "Pixabay Content License (free, no attribution required)",
+      "title": "Lofi Study"
+    }
+  }
+}

@@ -1,0 +1,39 @@
+# Channel 1: Manga/Manhwa/Webtoon New Release Reactions
+# Target: r/manga + r/manhwa (6.1M subscribers, 29 quality posts/week)
+# RPM: $10.45 | Competition: Low
+
+[reddit]
+subreddit = "manga+manhwa"
+post_limit = 5
+min_upvotes = 200
+min_comments = 15
+max_comment_length = 400
+top_comments = 6
+
+[tts]
+engine = "gtts"
+language = "en"
+slow = false
+
+[video]
+width = 1080
+height = 1920
+fps = 30
+max_duration = 58
+background_dir = "assets/backgrounds"
+font = "assets/fonts/NotoSansKR-Bold.ttf"
+title_font_size = 52
+comment_font_size = 42
+text_color = "white"
+text_stroke_color = "black"
+text_stroke_width = 3
+watermark = "r/manga"
+opacity = 0.7
+screenshot_scale = 0.90
+bgm_enabled = true
+bgm_volume = 0.12
+
+[output]
+dir = "output/manga"
+filename_template = "manga_{post_id}_{date}"
+history_file = "output/manga/history.json"
